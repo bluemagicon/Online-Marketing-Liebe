@@ -15,7 +15,7 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'Primary', 'ea_genesis_child' ),
 		'slug'  => 'primary',
-		'color'	=> '#1d7d8c',
+		'color'	=> '#D1B09E',
 	),
 	array(
 		'name'  => __( 'Dark', 'ea_genesis_child' ),

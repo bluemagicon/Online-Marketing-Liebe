@@ -101,10 +101,24 @@ wp.blocks.registerBlockStyle( 'core/heading', {
 	name: 'h1',
 	label: 'H1-Optik'
 } );
+wp.blocks.registerBlockStyle( 'core/heading', {
+	name: 'h1-overflow',
+	label: 'H1-Overflow'
+} );
 
 wp.blocks.registerBlockStyle( 'core/heading', {
 	name: 'h2',
 	label: 'H2-Optik'
+} );
+
+wp.blocks.registerBlockStyle( 'core/heading', {
+	name: 'h2-big-margin',
+	label: 'H2-Big-Margin'
+} );
+
+wp.blocks.registerBlockStyle( 'core/heading', {
+	name: 'h2-parallax',
+	label: 'H2-Parralax'
 } );
 
 wp.blocks.registerBlockStyle( 'core/heading', {
