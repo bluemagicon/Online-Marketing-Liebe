@@ -20,7 +20,7 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'Dark', 'ea_genesis_child' ),
 		'slug'  => 'dark',
-		'color' => '#181b1d',
+		'color' => '#444444',
 	),
 	array(
 		'name'	=> __( 'Medium', 'ea_genesis_child' ),

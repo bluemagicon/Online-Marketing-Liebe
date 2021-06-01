@@ -178,3 +178,8 @@ wp.blocks.registerBlockStyle( 'core/paragraph', {
 	name: 'h6',
 	label: 'H6-Optik'
 } );
+
+wp.blocks.registerBlockStyle( 'core/paragraph', {
+	name: 'no-margin',
+	label: 'P No-Margin'
+} );

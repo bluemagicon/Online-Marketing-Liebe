@@ -83,7 +83,7 @@ $page_header	= $override_header ?: $global_header;
 		</div>
 	</header>
     -->
-    <div class="logo-wrapper-fixed">
+    <div id="header" class="logo-wrapper-fixed">
         <?php include_once 'tpl/partials/logo-function.php'; ?>
         <?php include 'tpl/partials/logo.php'; ?>
     </div>
