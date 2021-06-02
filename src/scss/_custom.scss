@@ -182,7 +182,7 @@ p.is-style-no-margin{
   }
   .alignwide{
     width: calc(100% - (55px + 7%)) !important;
-    margin-left: 5%;
+    margin-left: 5% !important;
   }
   .ghostkit-custom-20Lk0R{
     padding-right: 0;
@@ -191,5 +191,14 @@ p.is-style-no-margin{
 @media(max-width: 576px) {
   h1{
     font-size: 2em;
+  }
+  h2{
+    font-size: 1.8em;
+  }
+  h2.is-style-h2-parallax{
+    font-size: 2.8em;
+  }
+  h3{
+    font-size: 1.6em;
   }
 }
