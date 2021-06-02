@@ -1,6 +1,7 @@
 /*** GLOBAL ***/
 .w-body{
   font-family: 'Barlow', sans-serif;
+  padding: 1%;
 }
 .wp-block-group:first-child{
   margin-top: 0;
@@ -123,7 +124,8 @@ p.is-style-no-margin{
   background: $w-color-dark;
   .scroll-to-top{
     display: flex;
-    width: 115px;
+    width: 100px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     background: $w-color-primary;
