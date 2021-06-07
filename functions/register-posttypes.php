@@ -96,7 +96,7 @@ function baw_register_my_cpts() {
 	/**
 	 * Post Type: Projekte.
 	 */
-
+	 /*
 	$labels = [
 		"name" => __( "Projekte", "baw" ),
 		"singular_name" => __( "Projekt", "baw" ),
@@ -130,6 +130,7 @@ function baw_register_my_cpts() {
 	];
 
 	register_post_type( "projekt", $args );
+	*/
 
 
 	/**

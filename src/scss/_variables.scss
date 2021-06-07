@@ -1,28 +1,35 @@
 /*** GLOBAL ***/
 $w-color-primary: #D1B09E;
 $w-color-dark: #444444;
-//$w-color-medium: #6a7177 !default;
-//$w-color-light: #eef1f5 !default;
-//$w-color-white: #fff !default;
-//$w-color-black: #000 !default;
+//$w-color-medium: #6a7177;
+//$w-color-light: #eef1f5;
+//$w-color-white: #fff;
+//$w-color-black: #000;
 
 $w-def-font-family: 'Barlow', sans-serif;
 
 /*** HEADLINE ***/
 $w-headline-font-family: 'Barlow Condensed', sans-serif;
+$w-headline-font-weight: 600;
 $w-headline-line-height: 1;
 $w-headline-text-transform: uppercase;
 
 $w-h1-size: 3.2em;
 $w-h1-size-bp: 5em;
 
-//$w-h2-size: 1.75em !default;
+//$w-h2-size: 1.75em;
 $w-h2-size-bp: 2.5em;
 
-//$w-h3-size: 1.5em !default;
+//$w-h3-size: 1.5em;
 $w-h3-size-bp: 1.7em;
 
 /*** BUTTON ***/
 $w-button-text-transform: uppercase;
-$w-button-font-family: 'Barlow Condensed', sans-serif;
+$w-button-font-family: $w-headline-font-family;
 $w-button-background: $w-color-dark;
+$w-button-font-weight: 600;
+$w-button-font-size: 1.1em;
+
+$w-button-padding-vertical: .8em;
+$w-button-padding-horizontal: 1.65em;
+$w-button-padding: $w-button-padding-vertical $w-button-padding-horizontal;

@@ -6,6 +6,7 @@
 /* barlow-condesed - latin */
 @font-face {
   font-family: 'Barlow Condensed';
+  font-display: swap;
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/barlow-condensed-v5-latin-600.eot'); /* IE9 Compat Modes */
@@ -20,6 +21,7 @@
 /* barlow-regular - latin */
 @font-face {
   font-family: 'Barlow';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local(''),
@@ -29,6 +31,7 @@
 /* barlow-italic - latin */
 @font-face {
   font-family: 'Barlow';
+  font-display: swap;
   font-style: italic;
   font-weight: 400;
   src: local(''),
@@ -38,6 +41,7 @@
 /* barlow-700 - latin */
 @font-face {
   font-family: 'Barlow';
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local(''),

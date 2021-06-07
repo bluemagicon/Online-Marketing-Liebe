@@ -52,10 +52,9 @@ jQuery(document).ready(function () {
     // -----------------------------------------------
     // ANCHOR LINKS
 
-    jQuery('main a[href*="#"]:not([class*=accordion]):not(._brlbs-btn), header a[href*="#"]:not([class*=accordion]), .offcanvas a[href*="#"]:not([class*=accordion]), .w-scrollto').stop().click(function(e) {
+    jQuery('main a[href*="#"]:not([class*=accordion]):not([class*=tabs-buttons]):not(._brlbs-btn), header a[href*="#"]:not([class*=accordion]), .offcanvas a[href*="#"]:not([class*=accordion]), .w-scrollto').stop().click(function(e) {
         var target = jQuery(this).attr("href");
         var current_url = window.location.origin + window.location.pathname;
-
         if(target !== "#") {
 
             if(target.charAt(0) == '#') {
@@ -85,9 +84,13 @@ jQuery(document).ready(function () {
 function scrollTo(target)
 {
     var distance = jQuery(target).offset().top;
-    var navHeight = jQuery('.header').outerHeight() + 40;
+
+    if(jQuery('.fixed-sidebar-header')[0]) {
+        var navHeight = jQuery('.fixed-sidebar-header').outerHeight() + 40;
+        distance = distance-navHeight;
+    }
 
     jQuery('html, body').animate({
-        scrollTop: (distance-navHeight)
+        scrollTop: distance
     }, 600);
 }
