@@ -73,6 +73,18 @@ p.is-style-no-margin{
     }
   }
 }
+/*** BEWERTUNGEN ***/
+.bewertung{
+  text-align: center;
+}
+.post-stars{
+  color: $w-color-primary;
+}
+.ghostkit-carousel-arrow, .slider-arrow{
+  background-color: $w-color-primary !important;
+  color: $w-color-dark !important;
+}
+
 
 /*** TABS ***/
 .ghostkit-tabs.is-style-pills .ghostkit-tabs-buttons-item{
