@@ -11,7 +11,10 @@
 
 /*** HEADLINES & BUTTONS ***/
 .ghostkit-button-icon-only{
-  width: 3.25em;
+  width: 3.25em !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
 }
 .is-style-h1-overflow{
   white-space: nowrap;
@@ -128,6 +131,15 @@ p.is-style-no-margin{
 #footer{
   display: flex;
   background: $w-color-dark;
+  .logo-wrapper{
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    svg{
+      width: 150px;
+    }
+  }
   .scroll-to-top{
     display: flex;
     width: 100px;
@@ -141,7 +153,7 @@ p.is-style-no-margin{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 5%;
+    padding: 20px 5% 20px 0;
     .footer-left{
       display: flex;
       align-items: center;
@@ -185,9 +197,21 @@ p.is-style-no-margin{
 
 }
 @media(max-width: 992px){
-
+  .ghostkit-button{
+    display: inline-block;
+    width: inherit;
+  }
+  .ghostkit-custom-ZB5MDO{
+    .ghostkit-col{
+      border-bottom: 1px solid $w-color-primary;
+      padding-bottom: var(--gkt-grid__gap);
+    }
+  }
 }
 @media(max-width: 768px) {
+  .w-body{
+    padding: 0;
+  }
   .logo-wrapper-fixed{
     position: unset;
     left: inherit;
@@ -198,9 +222,21 @@ p.is-style-no-margin{
       max-width: 155px;
     }
   }
+  .fixed-sidebar-header{
+    position: absolute;
+    top: 55px;
+    display: flex;
+    right: 5%;
+    a{
+      margin-right: 5px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
   .alignwide{
-    width: calc(100% - (55px + 7%)) !important;
-    margin-left: 5% !important;
+    width: 90% !important;
+    margin: 0 auto;
   }
   .ghostkit-custom-20Lk0R{
     padding-right: 0;
@@ -209,13 +245,39 @@ p.is-style-no-margin{
     min-height: 350px;
     max-height: 350px;
   }
+  #footer{
+    flex-wrap: wrap;
+    .logo-wrapper{
+      svg{
+        width: 125px;
+      }
+    }
+    .footer-container{
+      width: 100%;
+      padding: 50px 5%;
+      flex-direction: column;
+      align-items: center;
+      .socials{
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 @media(max-width: 576px) {
+  .logo-wrapper-fixed{
+    img{
+      max-width: 125px;
+    }
+  }
+  .fixed-sidebar-header{
+    top: 49px;
+  }
   h1{
     font-size: 2.2em;
   }
   .is-style-h2-parallax{
     font-size: 2.8em;
+    margin: 2%;
   }
   h2{
     margin-bottom: 1rem !important;
