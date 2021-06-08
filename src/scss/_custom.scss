@@ -250,6 +250,9 @@ p.is-style-no-margin{
   #footer{
     flex-wrap: wrap;
     .logo-wrapper{
+      background: #3E3E3E;
+      margin-right: 0;
+      flex-grow: 2;
       svg{
         width: 125px;
       }
@@ -277,11 +280,14 @@ p.is-style-no-margin{
   h1{
     font-size: 2.2em;
   }
-  .is-style-h2-parallax{
+  .is-style-h2-parallax {
     font-size: 2.8em;
     margin: 2%;
   }
   h2{
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  .ghostkit-custom-ZHPzQC h3{
+    margin-bottom: -10px;
   }
 }
