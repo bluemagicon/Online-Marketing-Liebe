@@ -4,9 +4,9 @@ if($social_profiles) {
 
     $icons = array(
         'linkedin' => 'brands/linkedin',
-        'xing' => 'brands/xing',
-        'facebook' => 'brands/facebook',
-        'instagram' => 'brands/instagram',
+        'xing' => 'brands/xing-square',
+        'facebook' => 'brands/facebook-square',
+        'instagram' => 'brands/instagram-square',
         'google' => 'brands/google',
         'pinterest' => 'brands/pinterest',
         'twitter' => 'brands/twitter',

@@ -53,8 +53,13 @@
     // Social Media Box
 
     &-social {
+
         .social {
             font-size: 1.2em;
+
+            a {
+                color: $w-color-white;
+            }
         }
     }
 

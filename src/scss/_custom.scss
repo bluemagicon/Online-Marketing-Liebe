@@ -159,21 +159,25 @@ p.is-style-no-margin{
     .footer-left{
       display: flex;
       align-items: center;
-      .socials{
+
+      .social{
         display: flex;
         color: #fff;
         a{
           margin-right: 10px;
           display: block;
+          color: #fff;
+          font-size: 1.5em;
           &:last-child{
             margin: 0;
           }
           svg{
             display: block;
-            width: 24px;
+            //width: 24px;
           }
         }
       }
+
     }
     .menu-wrapper ul{
       padding: 0;
