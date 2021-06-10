@@ -45,24 +45,29 @@ if($stars) {
 					<?php } ?>
 	            </p>
 
-				<p class="post-title">
+				<p class="post-title"><small>
 					<strong><?= get_the_title() ?></strong>
 					<?php if($data['subheadline']) { ?>
 						&nbsp;<?= $data['subheadline'] ?>
 					<?php } ?>
-				</p>
+				</small></p>
 			</header>
 
 			<?php if(! $hide_descr) { ?>
 
 				<?php
+				the_excerpt();
+				/*
 				if($data['text']) {
 					echo $data['text'];
 				} elseif(has_excerpt()) {
 					the_excerpt();
 				}
+				*/
 				?>
 			<?php } ?>
+
+			<p><a data-custom-open="dyn-modal" data-content="<?= urlencode($data['text']) ?>" data-title="<?= get_the_title() ?>" data-subtitle="<?= $data['subheadline'] ?>">weiterlesen</a></p>
 		</div>
 
 	</div>

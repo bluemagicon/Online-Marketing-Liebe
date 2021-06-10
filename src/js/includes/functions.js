@@ -42,15 +42,36 @@ offcanvas.on('close', function(){
 jQuery(document).ready(function () {
     'use strict';
 
+
+    // -----------------------------------------------
+    // -----------------------------------------------
+    // MODAL / LIGHTBOX
+
+    MicroModal.init({
+        openTrigger: 'data-custom-open',
+    });
+
+    jQuery('[data-custom-open="dyn-modal"]').click(function() {
+        console.log("test");
+        var title = jQuery(this).data('title');
+        var subtitle = jQuery(this).data('subtitle');
+        var content = decodeURIComponent(jQuery(this).data('content').replace(/\+/g, ' '));
+
+        jQuery('#dyn-modal-title').empty().append(title);
+        jQuery('#dyn-modal-subtitle').empty().append(subtitle);
+        jQuery('#dyn-modal-content').empty().append(content);
+    });
+
+
+    // -----------------------------------------------
+    // -----------------------------------------------
+    // ANCHOR LINKS
+
     if (window.location.hash) {
         setTimeout(function() {
             scrollTo(window.location.hash);
         }, 1);
     }
-
-    // -----------------------------------------------
-    // -----------------------------------------------
-    // ANCHOR LINKS
 
     jQuery('main a[href*="#"]:not([class*=accordion]):not([class*=tabs-buttons]):not(._brlbs-btn), header a[href*="#"]:not([class*=accordion]), .offcanvas a[href*="#"]:not([class*=accordion]), .w-scrollto').stop().click(function(e) {
         var target = jQuery(this).attr("href");
