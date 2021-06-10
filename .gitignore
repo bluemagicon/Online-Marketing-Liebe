@@ -54,3 +54,4 @@ sftp-config.json
 /src/scss/framework
 ftpconfig.json
 /src/scss/_wray-framework
+package-lock.json
