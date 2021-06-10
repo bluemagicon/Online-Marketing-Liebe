@@ -37,7 +37,7 @@
 @import 'framework/wordpress/core/notfound';
 @import 'framework/wordpress/core/pagination';
 @import 'framework/wordpress/core/post';
-@import 'framework/wordpress/core/single';
+//@import 'framework/wordpress/core/single';
 
 // ====================================================================
 // ====== WORDPRESS: GUTENBERG EDITOR
@@ -92,4 +92,5 @@
 @import 'project/header';
 //@import 'project/header-meta';
 @import 'project/modal';
+@import 'project/single';
 @import 'custom';
