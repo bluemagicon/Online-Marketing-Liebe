@@ -52,7 +52,6 @@ jQuery(document).ready(function () {
     });
 
     jQuery('[data-custom-open="dyn-modal"]').click(function() {
-        console.log("test");
         var title = jQuery(this).data('title');
         var subtitle = jQuery(this).data('subtitle');
         var content = decodeURIComponent(jQuery(this).data('content').replace(/\+/g, ' '));
